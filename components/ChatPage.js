@@ -4,15 +4,10 @@ import { GiftedChat } from 'react-native-gifted-chat'
 
 import auth from '@react-native-firebase/auth';
 
-import { useContext } from 'react';
-import { AuthContext } from './AuthProvider';
-import { set } from 'react-native-reanimated';
 import {
   Dimensions,
-  FlatList,
 } from 'react-native';
 const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
 
 const ChatPage = ({ route, navigation }) => {
   var chatWithUser = []
@@ -43,16 +38,8 @@ const ChatPage = ({ route, navigation }) => {
       } catch (e) {
         
         console.log(e)
-  //       firestore()
-  // .doc(`chats/${chatId}`)
-  // .set(chatWithUser)
-  // .then(() => {
-  //   console.log('Chat added!');
-  // });
-        
-        
+
       }
-      // console.log(chatWithUser)
       setLoad(false)
   }
 

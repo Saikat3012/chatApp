@@ -10,9 +10,6 @@ import {
   import firestore from '@react-native-firebase/firestore';
 
 import {
-    Input,
-    H2,
-    Button,
     Spinner,
     View,
     H3,
